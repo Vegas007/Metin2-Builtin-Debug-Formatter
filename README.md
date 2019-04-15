@@ -31,22 +31,23 @@ This function is built into an application and can it can be accessed by end-use
 
 # How-It-Works:
 - **TraceError**(args) - function prints the given arguments to the text stream file syserr.txt
+- **sys_err**(args) - same as **TraceError**.
 - **Tracef**(args) - function prints the given arguments to the console window (screen) while executable is compiled in a debug mode.
 - **LogBox**(args) - function prints the given arguments to the dialog box that contains a system icon, a set of buttons, 
 	and a brief application-specific message, such as status or error information.
 
 # How-To-Call-Ex <TraceError>:
 ```python
-TraceError('warning', 'error', 'unknown')
+sys_err('warning', 'error', 'unknown')
 << 415 17:8:1130 :: warning
 << 415 17:8:1130 :: error
 << 415 17:8:1130 :: unknown
 
-TraceError(100/2==50, 'set value to {}'.format(25))
+sys_err(100/2==50, 'set value to {}'.format(25))
 << 415 17:6:1083 :: True
 << 415 17:6:1083 :: set value to 25
 
-TraceError([45, 100], (200, 1500, 32), 42.8, 500, "donald-trump", False)
+sys_err([45, 100], (200, 1500, 32), 42.8, 500, "donald-trump", False)
 415 17:8:1094 :: [45, 100]
 415 17:8:1094 :: (200, 1500, 32)
 415 17:8:1094 :: 42.8
@@ -54,6 +55,6 @@ TraceError([45, 100], (200, 1500, 32), 42.8, 500, "donald-trump", False)
 415 17:8:1094 :: donald-trump
 415 17:8:1094 :: False
 
-TraceError("what-you-want")
+sys_err("what-you-want")
 << 415 17:8:1072 :: what-you-want
 ```
