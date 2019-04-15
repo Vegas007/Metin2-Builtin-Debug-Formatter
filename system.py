@@ -12,6 +12,9 @@ debugInfo.SetDebugMode(__DEBUG__)
 	# The purpose was to ease the work of developers, the new method:
 	# Difference between them?
 		>> Using the new method:
+			TraceError("str", 1, 4.0, (31, 22), [100, 200], True)
+			Tracef("str", 1, 4.0, (31, 22), [100, 200], True)
+			LogBox("str", 1, 4.0, (31, 22), [100, 200], True)
 			sys_err("str", 1, 4.0, (31, 22), [100, 200], True)
 			_______________________________________________
 			- No import needed.
@@ -21,6 +24,8 @@ debugInfo.SetDebugMode(__DEBUG__)
 		>> Using the old method:
 			import dbg
 			dbg.TraceError("just_one_string_allowed")
+			dbg.Tracef("just_one_string_allowed")
+			dbg.LogBox("just_one_string_allowed")
 			_______________________________________________
 			- Need to import the module dbg every time in every file where you want to use it.
 			- Allow to pass just one argument-line which need to be string, otherwise nothing happen.
@@ -33,10 +38,10 @@ debugInfo.SetDebugMode(__DEBUG__)
 
 	# How-It-Works:
 		TraceError(args) - function prints the given arguments to the text stream file syserr.txt
-		sys_err(args) - same as TraceError.
 		Tracef(args) - function prints the given arguments to the console window (screen) while executable is compiled in a debug mode.
 		LogBox(args) - function prints the given arguments to the dialog box that contains a system icon, a set of buttons, 
 			and a brief application-specific message, such as status or error information.
+		sys_err(args) - same as TraceError.
 
 	# How-To-Call-Ex <TraceError or sys_err>:
 		sys_err('warning', 'error', 'unknown')
