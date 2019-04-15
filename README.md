@@ -39,10 +39,10 @@ This function is built into an application and can it can be accessed by end-use
 
 # How-It-Works:
 - **TraceError**(args) - function prints the given arguments to the text stream file syserr.txt
-- **sys_err**(args) - same as **TraceError**.
 - **Tracef**(args) - function prints the given arguments to the console window (screen) while executable is compiled in a debug mode.
 - **LogBox**(args) - function prints the given arguments to the dialog box that contains a system icon, a set of buttons, 
 	and a brief application-specific message, such as status or error information.
+- **sys_err**(args) - same as **TraceError**.
 
 # How-To-Call-Ex <TraceError>:
 ```python
