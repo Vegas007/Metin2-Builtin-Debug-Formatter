@@ -1,4 +1,6 @@
 
+# Metin2 Builtin Debug Formatter
+
 A simple debug class which is used for output the messages.
 The class doesn't need to be called, we've added the functions into built-in functions.
 The purpose was to ease the work of developers, the new method:
@@ -33,9 +35,9 @@ This function is built into an application and can it can be accessed by end-use
 # How-To-Call-Ex <TraceError>:
 ```python
 TraceError('warning', 'error', 'unknown')
-<< 415 17:08:1130 :: warning
-<< 415 17:08:1130 :: error
-<< 415 17:08:1130 :: unknown
+<< 415 17:8:1130 :: warning
+<< 415 17:8:1130 :: error
+<< 415 17:8:1130 :: unknown
 
 TraceError(100/2==50, 'set value to {}'.format(25))
 << 415 17:6:1083 :: True
