@@ -6,14 +6,14 @@ The class doesn't need to be called, we've added the functions into built-in fun
 The purpose was to ease the work of developers, the new method:
 Difference between them?
 - Using the new method
-```c
+```py
 TraceError("str", 1, 4.0, (31, 22), [100, 200], True)
 # No import needed.
 # Allow to pass unlimited argument-lines, no data types check, can be everything you want: <int, float, string, tuple, list, boolean>.
 ```
 
 - Using the old method
-```c
+```py
 import dbg
 dbg.TraceError("just_one_string_allowed")
 # Need to import the module dbg every time in every file where you want to use it.
