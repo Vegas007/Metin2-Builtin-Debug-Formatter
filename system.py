@@ -17,9 +17,9 @@ debugInfo.SetDebugMode(__DEBUG__)
 			LogBox("str", 1, 4.0, (31, 22), [100, 200], True)
 			sys_err("str", 1, 4.0, (31, 22), [100, 200], True)
 			_______________________________________________
-			- No import needed.
-			# sys_err or TraceError is same.
-			- Allow to pass unlimited argument-lines, no data types check, can be everything you want: <int, float, string, tuple, list, boolean>.
+			# No import needed, is a built-in function, you can call it everywhere.
+			# The function sys_err or TraceError doing the same thing.
+			# Allow to pass unlimited argument-lines, no data types check, can be everything you want: <int, float, string, tuple, list, boolean>.
 			
 		>> Using the old method:
 			import dbg
@@ -27,8 +27,8 @@ debugInfo.SetDebugMode(__DEBUG__)
 			dbg.Tracef("just_one_string_allowed")
 			dbg.LogBox("just_one_string_allowed")
 			_______________________________________________
-			- Need to import the module dbg every time in every file where you want to use it.
-			- Allow to pass just one argument-line which need to be string, otherwise nothing happen.
+			# Need to import the module dbg every time in every file where you want to use it.
+			# Allow to pass just one argument-line which need to be string, otherwise nothing happen.
 
 	# Built-In-Functions:
 		Built in or inbuilt function are that type of functions which are already defined or created in a program or in programming framework. 
