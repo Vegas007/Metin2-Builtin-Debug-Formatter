@@ -33,22 +33,22 @@ This function is built into an application and can it can be accessed by end-use
 # How-To-Call-Ex <TraceError>:
 ```python
 TraceError('warning', 'error', 'unknown')
-<< 0415 17:08:01130 :: warning
-<< 0415 17:08:01130 :: error
-<< 0415 17:08:01130 :: unknown
+<< 415 17:08:1130 :: warning
+<< 415 17:08:1130 :: error
+<< 415 17:08:1130 :: unknown
 
 TraceError(100/2==50, 'set value to {}'.format(25))
-<< 0415 17:06:01083 :: True
-<< 0415 17:06:01083 :: set value to 25
+<< 415 17:6:1083 :: True
+<< 415 17:6:1083 :: set value to 25
 
 TraceError([45, 100], (200, 1500, 32), 42.8, 500, "donald-trump", False)
-<< 0415 17:08:01060 :: [45, 100]
-<< 0415 17:08:01060 :: (200, 1500, 32)
-<< 0415 17:08:01060 :: 42.8
-<< 0415 17:08:01060 :: 500
-<< 0415 17:08:01060 :: donald-trump
-<< 0415 17:08:01060 :: False
+415 17:8:1094 :: [45, 100]
+415 17:8:1094 :: (200, 1500, 32)
+415 17:8:1094 :: 42.8
+415 17:8:1094 :: 500
+415 17:8:1094 :: donald-trump
+415 17:8:1094 :: False
 
 TraceError("what-you-want")
-<< 0415 17:08:01072 :: what-you-want
+<< 415 17:8:1072 :: what-you-want
 ```
