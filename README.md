@@ -9,7 +9,7 @@ The class doesn't need to be called, we've added the functions into built-in fun
 
 The purpose was to ease the work of developers.
 
-**Difference between them?**
+**What's the difference between them?**
 - Using the new method
 ```py
 TraceError("str", 1, 4.0, (31, 22), [100, 200], True)
