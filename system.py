@@ -12,9 +12,10 @@ debugInfo.SetDebugMode(__DEBUG__)
 	# The purpose was to ease the work of developers, the new method:
 	# Difference between them?
 		>> Using the new method:
-			TraceError("str", 1, 4.0, (31, 22), [100, 200], True)
+			sys_err("str", 1, 4.0, (31, 22), [100, 200], True)
 			_______________________________________________
 			- No import needed.
+			# sys_err or TraceError is same.
 			- Allow to pass unlimited argument-lines, no data types check, can be everything you want: <int, float, string, tuple, list, boolean>.
 			
 		>> Using the old method:
@@ -32,6 +33,7 @@ debugInfo.SetDebugMode(__DEBUG__)
 
 	# How-It-Works:
 		TraceError(args) - function prints the given arguments to the text stream file syserr.txt
+		sys_err(args) - same as TraceError.
 		Tracef(args) - function prints the given arguments to the console window (screen) while executable is compiled in a debug mode.
 		LogBox(args) - function prints the given arguments to the dialog box that contains a system icon, a set of buttons, 
 			and a brief application-specific message, such as status or error information.
