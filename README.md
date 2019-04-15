@@ -1,9 +1,11 @@
 
 # Metin2 Builtin Debug Formatter
 
-A simple debug class which is used for output the messages.
+A simple debug class which is used for output the messages for debugging.
+
 The class doesn't need to be called, we've added the functions into built-in functions.
-The purpose was to ease the work of developers, the new method:
+
+The purpose was to ease the work of developers.
 
 Difference between them?
 - Using the new method
