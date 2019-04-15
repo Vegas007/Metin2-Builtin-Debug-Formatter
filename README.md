@@ -1,5 +1,6 @@
 
 
+
 # Metin2 Builtin Debug Formatter
 
 A simple debug class which is used for output the messages for debugging.
@@ -15,9 +16,8 @@ TraceError("str", 1, 4.0, (31, 22), [100, 200], True)
 Tracef("str", 1, 4.0, (31, 22), [100, 200], True)
 LogBox("str", 1, 4.0, (31, 22), [100, 200], True)
 sys_err("str", 1, 4.0, (31, 22), [100, 200], True)
-
-# No import needed.
-# sys_err or TraceError is same.
+# No import needed, is a built-in function, you can call it everywhere.
+# The function sys_err or TraceError doing the same thing.
 # Allow to pass unlimited argument-lines, no data types check, can be everything you want: <int, float, string, tuple, list, boolean>.
 ```
 
