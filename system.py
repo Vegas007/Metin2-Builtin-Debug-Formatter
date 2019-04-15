@@ -88,3 +88,4 @@ class DBG:
 __builtin__.TraceError = lambda *args : DBG.Execute(DBG.STATE_SYS_ERR, args)
 __builtin__.Tracef = lambda *args : DBG.Execute(DBG.STATE_CONSOLE, args)
 __builtin__.LogBox = lambda *args : DBG.Execute(DBG.STATE_LOGBOX, args)
+__builtin__.sys_err = __builtin__.TraceError
