@@ -12,6 +12,7 @@ Difference between them?
 ```py
 TraceError("str", 1, 4.0, (31, 22), [100, 200], True)
 # No import needed.
+# sys_err or TraceError is same.
 # Allow to pass unlimited argument-lines, no data types check, can be everything you want: <int, float, string, tuple, list, boolean>.
 ```
 
