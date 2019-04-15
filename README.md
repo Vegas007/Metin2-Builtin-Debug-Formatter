@@ -4,6 +4,7 @@
 A simple debug class which is used for output the messages.
 The class doesn't need to be called, we've added the functions into built-in functions.
 The purpose was to ease the work of developers, the new method:
+
 Difference between them?
 - Using the new method
 ```py
