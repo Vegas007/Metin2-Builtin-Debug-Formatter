@@ -90,7 +90,7 @@ class DBG:
 		for line in lines:
 			execute = DBG.FUNC_ADRESS_DICT.get(state, DBG.STATE_SYS_ERR)
 			# Convert the argument line into a string every time, so you can use any type of data for each line.
-			execute(str(line).rstrip())
+			execute('{}'.format(line))
 
 __builtin__.TraceError = lambda *args : DBG.Execute(DBG.STATE_SYS_ERR, args)
 __builtin__.Tracef = lambda *args : DBG.Execute(DBG.STATE_CONSOLE, args)
