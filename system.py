@@ -36,17 +36,17 @@ debugInfo.SetDebugMode(__DEBUG__)
 		LogBox(args) - function prints the given arguments to the dialog box that contains a system icon, a set of buttons, 
 			and a brief application-specific message, such as status or error information.
 
-	# How-To-Call-Ex <TraceError>:
-		TraceError('warning', 'error', 'unknown')
+	# How-To-Call-Ex <TraceError or sys_err>:
+		sys_err('warning', 'error', 'unknown')
 			<< 0415 17:08:01130 :: warning
 			<< 0415 17:08:01130 :: error
 			<< 0415 17:08:01130 :: unknown
 
-		TraceError(100/2==50, 'set value to {}'.format(25))
+		sys_err(100/2==50, 'set value to {}'.format(25))
 			<< 0415 17:06:01083 :: True
 			<< 0415 17:06:01083 :: set value to 25
 		
-		TraceError([45, 100], (200, 1500, 32), 42.8, 500, "donald-trump", False)
+		sys_err([45, 100], (200, 1500, 32), 42.8, 500, "donald-trump", False)
 			<< 0415 17:08:01060 :: [45, 100]
 			<< 0415 17:08:01060 :: (200, 1500, 32)
 			<< 0415 17:08:01060 :: 42.8
@@ -54,7 +54,7 @@ debugInfo.SetDebugMode(__DEBUG__)
 			<< 0415 17:08:01060 :: donald-trump
 			<< 0415 17:08:01060 :: False
 
-		TraceError("what-you-want")
+		sys_err("what-you-want")
 			<< 0415 17:08:01072 :: what-you-want
 """
 class DBG:
