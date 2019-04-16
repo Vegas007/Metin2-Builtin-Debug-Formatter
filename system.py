@@ -83,13 +83,13 @@ class DBG:
 		if state == DBG.STATE_CONSOLE and not isDebugMode:
 			return
 
-		# If argument lines is just a string, convert it into a tuple.
+		# If there's just one argument, convert it into a tuple.
 		if not isinstance(lines, (tuple, list)):
 			lines = tuple([lines])
 
 		for line in lines:
 			execute = DBG.FUNC_ADRESS_DICT.get(state, DBG.STATE_SYS_ERR)
-			# Convert the argument line into a string every time, so you can use any type of data for each line.
+			# By using custom string formatting it takes a format string and an arbitrary set of positional and keyword arguments.
 			execute('{}'.format(line))
 
 __builtin__.TraceError = lambda *args : DBG.Execute(DBG.STATE_SYS_ERR, args)
